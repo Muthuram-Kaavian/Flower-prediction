@@ -16,7 +16,7 @@ metadata:
 spec:
   inputs:
     artifacts:
-      - name: irismodel # placeholder name, do not add `-` in value use only alphanumeric chars
+      - name: irismodel # placeholder name, do not add `-` in value use only alphanumeric chars.
   template:
     apiVersion: "serving.kserve.io/v1beta1"
     metadata:
