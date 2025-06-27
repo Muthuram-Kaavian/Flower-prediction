@@ -16,7 +16,7 @@ metadata:
     ai.sap.com/version: "4.0"
 spec:
   imagePullSecrets:
-    - name: milton-credentials # your docker registry secret
+    - name:  dckr_pat_ASJN1iPbIdYoqFMdpLCcdMu6KJI # your docker registry secret
   entrypoint: mypipeline
   arguments:
     parameters: # placeholder for string like inputs
@@ -37,7 +37,7 @@ spec:
             none:   # specify not to compress while uploading to cloud
               {}
     container:
-      image: docker.io/miltonc/iris-ai-training-image:03 # Your docker image name
+      image: docker.io/muthurammurugan/iris-ai-training-image:03 # Your docker image name
       command: ["/bin/sh", "-c"]
       env:
         - name: CLASS_LABEL # name of the environment variable inside Docker container
