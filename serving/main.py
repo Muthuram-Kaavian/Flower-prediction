@@ -24,7 +24,7 @@ def init():
 
     if not appHasRunBefore:
         # All the model files will be read from /mnt/models
-        model = pickle.load(open('/mnt/models/model.pkl', 'rb'))
+        model = pickle.load(open('./model.pkl', 'rb'))
         # model = pickle.load(open('model.pkl', 'rb'))
         appHasRunBefore = True
         return None
